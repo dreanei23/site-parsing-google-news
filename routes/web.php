@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\NewsController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +19,4 @@ use App\Http\Controllers\IndexController;
 
 
 Route::get('/', [IndexController::class, 'index']);
+Route::resource('news', NewsController::class);
