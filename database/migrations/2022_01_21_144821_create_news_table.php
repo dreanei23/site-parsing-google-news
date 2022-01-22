@@ -17,24 +17,24 @@ class CreateNewsTable extends Migration
             $table->id();
             $table->timestamps();
 
-            $table->string('meta_title');
-            $table->string('meta_description');
-            $table->string('meta_keyword');
-            $table->string('slug');
+            $table->string('meta_title')->nullable();
+            $table->string('meta_description')->nullable();
+            $table->string('meta_keyword')->nullable();
+            $table->string('slug')->nullable();
 
-            $table->string('title');
-            $table->text('content');
+            $table->string('title')->nullable();
+            $table->text('content')->nullable();
 
-            $table->unsignedBigInteger('category_id');
-            $table->unsignedBigInteger('city_id');
+            $table->unsignedBigInteger('category_id')->nullable();
+            $table->unsignedBigInteger('city_id')->nullable();
 
             $table->foreign('category_id')->references('id')->on('categories');
             $table->foreign('city_id')->references('id')->on('cities');
 
             $table->string('source_url');
-            $table->boolean('parsed');
+            $table->boolean('parsed')->default(0);
 
-            $table->boolean('enabled');
+            $table->boolean('enabled')->default(0);
         });
     }
 

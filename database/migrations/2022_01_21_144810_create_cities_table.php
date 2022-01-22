@@ -17,13 +17,13 @@ class CreateCitiesTable extends Migration
             $table->id();
             $table->timestamps();
 
-            $table->string('meta_title');
-            $table->string('meta_description');
-            $table->string('meta_keyword');
-            $table->string('slug');
+            $table->string('meta_title')->nullable();
+            $table->string('meta_description')->nullable();
+            $table->string('meta_keyword')->nullable();
+            $table->string('slug')->nullable();
 
             $table->string('name');
-            $table->text('description');
+            $table->text('description')->nullable();
         });
     }
 

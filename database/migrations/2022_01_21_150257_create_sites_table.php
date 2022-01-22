@@ -18,11 +18,11 @@ class CreateSitesTable extends Migration
             $table->timestamps();
 
             $table->string('domain');
-            $table->string('selector_category');
-            $table->string('selector_city');
-            $table->string('selector_title');
-            $table->string('selector_image');
-            $table->string('selector_image_Label');
+            $table->string('selector_category')->nullable();
+            $table->string('selector_city')->nullable();
+            $table->string('selector_title')->nullable();
+            $table->string('selector_image')->nullable();
+            $table->string('selector_image_Label')->nullable();
         });
     }
 
