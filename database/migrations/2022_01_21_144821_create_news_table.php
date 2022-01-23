@@ -31,7 +31,7 @@ class CreateNewsTable extends Migration
             $table->foreign('category_id')->references('id')->on('categories');
             $table->foreign('city_id')->references('id')->on('cities');
 
-            $table->string('source_url');
+            $table->string('source_url')->unique();
             $table->boolean('parsed')->default(0);
 
             $table->boolean('enabled')->default(0);

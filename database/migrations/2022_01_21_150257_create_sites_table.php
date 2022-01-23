@@ -17,7 +17,7 @@ class CreateSitesTable extends Migration
             $table->id();
             $table->timestamps();
 
-            $table->string('domain');
+            $table->string('domain')->unique();
             $table->string('selector_category')->nullable();
             $table->string('selector_city')->nullable();
             $table->string('selector_title')->nullable();

@@ -22,7 +22,7 @@ class CreateCategoriesTable extends Migration
             $table->string('meta_keyword')->nullable();
             $table->string('slug')->nullable();
 
-            $table->string('name');
+            $table->string('name')->unique();
             $table->text('description')->nullable();
         });
     }
