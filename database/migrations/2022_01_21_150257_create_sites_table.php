@@ -21,6 +21,7 @@ class CreateSitesTable extends Migration
             $table->string('selector_category')->nullable();
             $table->string('selector_city')->nullable();
             $table->string('selector_title')->nullable();
+            $table->string('selector_content')->nullable();
             $table->string('selector_image')->nullable();
             $table->string('selector_image_Label')->nullable();
         });
