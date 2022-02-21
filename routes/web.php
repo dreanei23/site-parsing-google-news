@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\SiteController;
+use App\Http\Controllers\CategoryController;
 
 
 /*
@@ -18,5 +20,17 @@ use App\Http\Controllers\NewsController;
 */
 
 
-Route::get('/', [IndexController::class, 'index']);
-Route::resource('news', NewsController::class);
+
+
+
+Route::get('/', [IndexController::class, 'index'])->name('index');
+
+Route::resources([
+    'site' => SiteController::class,
+]);
+// 'news' => NewsController::class,
+
+Route::get('{category:slug}', [CategoryController::class, 'show'])->name('category.show');
+
+
+Route::get('{category:slug}/{news:slug}', [NewsController::class, 'show'])->name('news.show');

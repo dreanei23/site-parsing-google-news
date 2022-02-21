@@ -5,7 +5,7 @@
   @include('web.common.head')
 </head>
 
-<body>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
 
   <header>
     @include('web.common.header')

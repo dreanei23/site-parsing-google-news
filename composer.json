@@ -7,6 +7,7 @@
     "require": {
         "php": "^7.3|^8.0",
         "dbrekelmans/bdi": "^1.0",
+        "diglactic/laravel-breadcrumbs": "^7.1",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.4",
         "imangazaliev/didom": "^1.18",
@@ -17,6 +18,7 @@
         "symfony/panther": "^1.1"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.6",
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^1.0.1",

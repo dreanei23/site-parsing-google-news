@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
+
+
+a {
+    @apply text-blue-600 hover:text-blue-700;
+}
+
+.menu-link {
+    @apply text-gray-600 hover:text-gray-900;
+}
+.menu-link.active {
+    @apply text-gray-900 font-bold;
+}
+
+
 @tailwind utilities;
