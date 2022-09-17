@@ -6,7 +6,7 @@
                 <div class="px-8">
                     <h3 class="font-bold text-gray-900">О сайте</h3>
                     <p class="py-4 text-gray-600 text-sm">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel mi ut felis tempus commodo nec id erat. Suspendisse consectetur dapibus velit ut lacinia.
+                        Мы собираем только актуальные новости в одном месте для удобного просмотра. Добавляйте нас в закладки!
                     </p>
                 </div>
             </div>
